@@ -14,6 +14,10 @@
 		0C6FD73D2272390E004E59E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C6FD73B2272390E004E59E9 /* LaunchScreen.storyboard */; };
 		0C6FD7482272390F004E59E9 /* MultiGridViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD7472272390F004E59E9 /* MultiGridViewTests.swift */; };
 		0C6FD7532272390F004E59E9 /* MultiGridViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD7522272390F004E59E9 /* MultiGridViewUITests.swift */; };
+		0C6FD76122723927004E59E9 /* MultiGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD76022723927004E59E9 /* MultiGridView.swift */; };
+		0C6FD7632272A987004E59E9 /* MultiGridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD7622272A987004E59E9 /* MultiGridCollectionViewCell.swift */; };
+		0C6FD76522735331004E59E9 /* SimpleColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD76422735331004E59E9 /* SimpleColorCell.swift */; };
+		0C6FD7672273F141004E59E9 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6FD7662273F141004E59E9 /* SectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		0C6FD74E2272390F004E59E9 /* MultiGridViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiGridViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6FD7522272390F004E59E9 /* MultiGridViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiGridViewUITests.swift; sourceTree = "<group>"; };
 		0C6FD7542272390F004E59E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C6FD76022723927004E59E9 /* MultiGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiGridView.swift; sourceTree = "<group>"; };
+		0C6FD7622272A987004E59E9 /* MultiGridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiGridCollectionViewCell.swift; sourceTree = "<group>"; };
+		0C6FD76422735331004E59E9 /* SimpleColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleColorCell.swift; sourceTree = "<group>"; };
+		0C6FD7662273F141004E59E9 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				0C6FD7392272390E004E59E9 /* Assets.xcassets */,
 				0C6FD73B2272390E004E59E9 /* LaunchScreen.storyboard */,
 				0C6FD73E2272390E004E59E9 /* Info.plist */,
+				0C6FD76022723927004E59E9 /* MultiGridView.swift */,
+				0C6FD7622272A987004E59E9 /* MultiGridCollectionViewCell.swift */,
+				0C6FD76422735331004E59E9 /* SimpleColorCell.swift */,
+				0C6FD7662273F141004E59E9 /* SectionHeaderView.swift */,
 			);
 			path = MultiGridView;
 			sourceTree = "<group>";
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C6FD7632272A987004E59E9 /* MultiGridCollectionViewCell.swift in Sources */,
+				0C6FD7672273F141004E59E9 /* SectionHeaderView.swift in Sources */,
+				0C6FD76122723927004E59E9 /* MultiGridView.swift in Sources */,
 				0C6FD7352272390B004E59E9 /* ViewController.swift in Sources */,
 				0C6FD7332272390B004E59E9 /* AppDelegate.swift in Sources */,
+				0C6FD76522735331004E59E9 /* SimpleColorCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5F3CYQZ568;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MultiGridView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,7 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5F3CYQZ568;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MultiGridView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
