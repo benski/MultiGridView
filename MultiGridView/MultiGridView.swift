@@ -226,8 +226,13 @@ extension MultiGridView : UICollectionViewDelegateFlowLayout {
             guard let virtualSection = self.section(collectionView: collectionView) else { return .zero }
             let insets: UIEdgeInsets = dataSource.insets(multiGridView: self, section: virtualSection)
             let virtualIndexPath = IndexPath(item: indexPath.item, section: virtualSection)
-            let height = dataSource.height(multiGridView: self, section: virtualSection) - insets.top - insets.bottom
-            let width = dataSource.cellWidth(multiGridView: self, indexPath: virtualIndexPath, height: height)
+            let columns = CGFloat(dataSource.columns(multiGridView: self, section: virtualSection))
+            let spacing = CGFloat(4) // TODO(benski)
+            let width = floor(self.bounds.width - insets.left - insets.right - (columns - 1) * spacing) / columns
+            let height = dataSource.cellHeight(multiGridView: self, indexPath: virtualIndexPath, width: width)
+//            let height = dataSource.height(multiGridView: self, section: virtualSection) - insets.top - insets.bottom
+//            let width = dataSource.cellWidth(multiGridView: self, indexPath: virtualIndexPath, height: height)
+            
             return CGSize(width: width, height: height)
         }
     }
